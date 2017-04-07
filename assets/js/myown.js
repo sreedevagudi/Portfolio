@@ -29,8 +29,8 @@ myApp.config(['$routeProvider', function($routeProvider){
             redirectTo: '/'
         });
     
-//    angular.element(document).ready(function(){
-//        // Add smooth scrolling to all links in navbar + footer link
+    angular.element(document).ready(function(){
+        // Add smooth scrolling to all links in navbar + footer link
 //      $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
 //        // Make sure this.hash has a value before overriding default behavior
 //        if (this.hash !== "") {
@@ -51,20 +51,16 @@ myApp.config(['$routeProvider', function($routeProvider){
 //          });
 //        } // End if
 //      });
-//
-//      $(window).scroll(function() {
-//        $(".slideanim").each(function(){
-//          var pos = $(this).offset().top;
-//
-//          var winTop = $(window).scrollTop();
-//            if (pos < winTop + 600) {
-//              $(this).addClass("slide");
-//            }
-//        });
-//      });
-//    });
-}]);
 
-myApp.controller("aboutController", function($scope){
-    $scope.message = "i am in About Page";
-});
+      $(window).scroll(function() {
+        $(".slideanim").each(function(){
+          var pos = $(this).offset().top;
+
+          var winTop = $(window).scrollTop();
+            if (pos < winTop + 600) {
+              $(this).addClass("slide");
+            }
+        });
+      });
+    });
+}]);
