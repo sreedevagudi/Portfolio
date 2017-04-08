@@ -5,7 +5,7 @@
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link href="assets/js/libs/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
-            <script src="https://code.jquery.com/jquery-1.9.1.min.js" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ=" 
+            <script src="https://code.jquery.com/jquery-1.9.1.min.js" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ="
             crossorigin="anonymous"></script>
             <script src="assets/js/libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
             <link href="assets/js/libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet">
@@ -14,7 +14,7 @@
             <!-- load angular and angular route via CDN -->
             <script src="assets/js/libs/angular-1.5.0/angular.min.js"></script>
             <script src="assets/js/libs/angular-1.5.0/angular-route.min.js"></script>
-            
+
             <!-- load controller -->
             <script src="assets/js/myown.js"></script>
             <script src="views/aboutCntrl.js"></script>
@@ -27,57 +27,72 @@
 			<!-- HEADER AND NAVBAR -->
 			<header>
 				<nav class="navbar navbar-default navbar-fixed-top">
-                  <div class="container">
-                    <div class="navbar-header">
-                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>                        
-                      </button>
-                      <a class="navbar-brand" href="#myPage">Sreenath</a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                      <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#about">ABOUT</a></li>
-                        <li><a href="#services">SERVICES</a></li>
-                        <li><a href="#portfolio">PORTFOLIO</a></li>
-                        <li><a href="#pricing">PRICING</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </nav>
-			</header>
-            
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="jumbotron text-center">
-                          <h1>Company</h1> 
-                          <p>We specialize in blablabla</p> 
-                          <form>
-                            <div class="input-group">
-                              <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-                              <div class="input-group-btn">
-                                <button type="button" class="btn btn-danger">Subscribe</button>
-                              </div>
-                            </div>
-                          </form>
-                        </div>
-
-                        <!-- MAIN CONTENT AND INJECTED VIEWS -->
-                        <div id="main" ng-view></div>
-                    </div>
-                </div>
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#myPage">Sreenath</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#about">ABOUT</a></li>
+                  <li><a href="#services">SERVICES</a></li>
+                  <li><a href="#portfolio">PORTFOLIO</a></li>
+                  <li><a href="#pricing">PRICING</a></li>
+                  <li><a href="#contact">CONTACT</a></li>
+                </ul>
+              </div>
             </div>
-            
-            
-            <footer class="container-fluid text-center">
-              <a href="#myPage" title="To Top">
-                <span class="glyphicon glyphicon-chevron-up"></span>
-              </a>
-              <p><a href="/" title="Visit My website">Beautiful Responsive Website</a></p>
-            </footer>			
-            
+          </nav>
+			</header>
+
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-4">
+                <div id="Profile" class="talents-item_wrapper">
+                    <div class="talents-item_inner talents_card">
+                      <div class="talents_card-extra">
+                        <a class="talents_card-photo_wrapper" data-cookie-name="resumeReferrer" data-ensure-cookie="{&quot;category&quot;:null}" href="/designers/resume/haiyuan-jiang">
+                          <img title="large" class="talents_card-photo img-responsive" src="assets/img/Sreenath.jpg" alt="Sreenath"/>
+                          <div class="talents_card-photo_hint">View full profile »</div>
+                        </a>
+                      </div>
+                      <div class="talents_card-main">
+                        <a class="link is-blue talents_card-name" data-cookie-name="resumeReferrer" data-ensure-cookie="{&quot;category&quot;:null}" href="/designers/resume/haiyuan-jiang">Haiyuan Jiang</a>
+                        <div class="talents_card-country">China</div>
+                        <div class="talents_card-description" data-truncate="" style="opacity: 1; max-height: none;">
+                          <span data-role="original_text">Haiyuan is a UI designer with 4+ years of experience who has delivered over 50+ projects to satisfied clients from all over the world. Though her specialty is designing for the user interface, she also has an acumen for graphic, motion, an… </span>
+                        </div>
+                        <div class="talents_card-skills" data-rows="2" data-view="skill_talent#tags" style="max-height: none;">
+                          <a class="tag talents_card-skill" data-role="tag" href="https://www.toptal.com/designers/ui">UI Designer</a>
+                          <a class="tag talents_card-skill" data-role="tag" href="https://www.toptal.com/designers/photoshop">Adobe Photoshop</a>
+                          <a class="tag talents_card-skill" data-role="tag" href="https://www.toptal.com/designers/illustrator">Adobe Illustrator</a>
+                          <a class="tag" data-cookie-name="resumeReferrer" data-ensure-cookie="{&quot;category&quot;:null}" data-role="more" href="/designers/resume/haiyuan-jiang" style="">+<span data-role="count">2</span> more</a>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <a class="button is-green_candy is-small is-full_width is-fixed talents_card-hire" href="https://www.toptal.com/companies/apply?interested_in=designers">Hire Haiyuan</a>
+                      </div>
+                    </div>
+
+                </div>
+              </div>
+              <div class="col-md-8">
+                  <!-- MAIN CONTENT AND INJECTED VIEWS -->
+                  <div id="main" ng-view></div>
+              </div>
+          </div>
+      </div>
+
+      <footer class="container-fluid text-center">
+        <a href="#myPage" title="To Top">
+          <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <p><a href="/" title="Visit My website">Beautiful Responsive Website</a></p>
+      </footer>
+
 		</body>
     </html>

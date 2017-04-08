@@ -28,7 +28,7 @@ body {
     font-family: Helvetica Neue UltraLight;
     src: url(fonts/HelveticaNeueLTStd-UltLt.otf);
 }
-/* 
+/*
 
 */
 
@@ -4197,7 +4197,7 @@ nav .nav-header:focus {
       color: #303030;
       font-weight: 400;
       margin-bottom: 30px;
-  }  
+  }
   .jumbotron {
       background-color: #f4511e;
       color: #fff;
@@ -4251,7 +4251,7 @@ nav .nav-header:focus {
       font-style: normal;
   }
   .panel {
-      border: 1px solid #f4511e; 
+      border: 1px solid #f4511e;
       border-radius:0 !important;
       transition: box-shadow 0.5s;
   }
@@ -5010,7 +5010,7 @@ nav .nav-header:focus {
     0% {
       opacity: 0;
       transform: translateY(70%);
-    } 
+    }
     100% {
       opacity: 1;
       transform: translateY(0%);
@@ -5020,7 +5020,7 @@ nav .nav-header:focus {
     0% {
       opacity: 0;
       -webkit-transform: translateY(70%);
-    } 
+    }
     100% {
       opacity: 1;
       -webkit-transform: translateY(0%);
@@ -5041,3 +5041,173 @@ nav .nav-header:focus {
         font-size: 150px;
     }
   }
+}
+.talents-item {
+    background: #FFF;
+    border: 1px solid #E7E7E7;
+    box-shadow: rgba(0,0,0,.1) 0 2px 5px;
+    padding-bottom: 40px;
+}
+.talents-item_inner {
+    padding: 15px 20px;
+}
+.talents_card {
+    overflow: hidden;
+    position: fixed;
+    top: 70px;
+    left: 0px;
+    width: 33.33333333%;
+}
+.talents_card-extra {
+    margin-bottom: 15px;
+}
+.talents_card-main {
+    text-align: center;
+}
+.talents_card-photo_wrapper {
+    display: block;
+    margin-bottom: 15px;
+    position: relative;
+}
+.talents_card-photo {
+    border: 3px solid #FFF;
+    box-shadow: 0 1px 4px rgba(0,0,0,.3);
+    display: block;
+}
+.talents_card-photo, .talents_card-photo_hint {
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.talents_card-photo_hint {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    background-color: #406eaa;
+    background-color: rgba(64,110,170,.8);
+    bottom: 0;
+    color: #FFF;
+    left: 0;
+    line-height: 145px;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    -webkit-transition: opacity .2s;
+    transition: opacity .2s;
+}
+.talents_card-country, .talents_card-name {
+    letter-spacing: .01em;
+    color: #3863a0;
+    font-size: 20px;
+    font-weight: 500;
+}
+.talents_card-name {
+    display: inline-block!important;
+    margin-bottom: 7px;
+}
+.link.is-blue, .link.is-dark {
+    -webkit-transition: color 150ms;
+    display: inline;
+    text-decoration: none;
+}
+.link.is-blue {
+    color: #3863a0;
+    transition: color 150ms;
+    -webkit-transition-property: color,text-shadow,-webkit-transform;
+    transition-property: color,text-shadow,-webkit-transform;
+    transition-property: color,transform,text-shadow;
+    transition-property: color,transform,text-shadow,-webkit-transform;
+}
+.talents_card-country {
+    font-size: 18px;
+}
+.talents_card-description {
+    color: #b2b2b2;
+    margin: 15px 0;
+    max-height: 120px;
+    min-height: 120px;
+    opacity: 0;
+    text-align: left;
+}
+.talents_card-skills {
+    margin-bottom: 8px;
+    margin-right: -7px;
+    text-align: left;
+    max-height: 72px;
+    min-height: 72px;
+    overflow: hidden;
+}
+.talents_card-skill {
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #6A92CB;
+    color: #fff;
+    display: inline-block;
+    margin-right: 7px;
+    border: 1px solid #4D75AD;
+    font-size: 13px;
+    line-height: 25px;
+    text-shadow: 0 1px rgba(0,0,0,.32);
+    border-radius: 2px;
+    margin-bottom: 7px;
+    text-decoration: none;
+}
+.talents_card-skill:first-child {
+    margin-left: 0;
+}
+.tag {
+    font-size: 13px;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    display: inline-block;
+    padding: 2px 20px 0;
+    margin-bottom: 7px;
+    margin-right: 7px;
+    background-color: #175ba0;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    line-height: 25px;
+    text-decoration: none;
+}
+.talents_card-hire_container {
+    bottom: 15px;
+    left: 20px;
+    position: absolute;
+    right: 20px;
+}
+.talents_card-hire {
+    letter-spacing: .01em;
+    font-size: 14px!important;
+    font-weight: 500!important;
+}
+.button.is-fixed {
+    padding-left: 0;
+    padding-right: 0;
+}
+.button.is-green_candy, .button.is-green_candy_faux {
+    border-radius: 4px;
+    -webkit-transition: background 150ms;
+}
+.button.is-green_candy {
+    background: #3dbe8b;
+    background: -webkit-linear-gradient(#43c692,#39b885);
+    background: linear-gradient(#43c692,#39b885);
+    border: 1px solid #1f7c57;
+    box-shadow: inset #4fd3aa 0 1px;
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+    text-shadow: #1c8f3d 0 1px 0;
+    text-transform: uppercase;
+    transition: background 150ms;
+}
+.button.is-small {
+    font-size: 16px;
+    padding: 8px 20px;
+}
+.button.is-full_width {
+    text-align: center;
+    width: 100%;
+}
