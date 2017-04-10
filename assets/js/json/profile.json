@@ -1,13 +1,4 @@
-//angular.module('myResp')
-//    .controller("aboutController", ['$scope', '$http', '$log','$location', 'myJson', 
-//        function($scope, $http, $log, $location, myJson){
-//         // Chapters  json data
-//        myJson.all().then(function(resp) {
-//            $scope.skills = resp;
-//        });
-angular.module('myResp')
-    .controller("aboutController", ['$scope', function($scope){    
-         $scope.skills = [
+[
         { "name": "Languages/Scripts",
           "list": [
                 {"prof": "HTML5"},
@@ -74,5 +65,5 @@ angular.module('myResp')
                 {"prof": "Eclipse"},
                 {"prof": "Oracle Web Logic"}
             ]
-        }];    
-}]);
+        }
+]

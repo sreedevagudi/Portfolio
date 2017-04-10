@@ -1,5 +1,16 @@
 
-angular.module("myResp").controller("layoutCtrl", ["$location", "$scope",
+angular.module("myResp")
+//    .factory('myJson', ['$http', function ($http){
+//        var myJson = {};
+//        myJson.get = $http.get('assets/js/json/profile.json').then(function(resp){
+//            return resp.data;
+//        });
+//        myJson.all = function(){
+//            return myJson.get;
+//        };
+//        return myJson;
+//    }])
+    .controller("layoutCtrl", ["$location", "$scope",
     function ($location, $scope) {        
         $scope.isActive = function (viewLocation) {
             return viewLocation === $location.path();

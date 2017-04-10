@@ -5131,7 +5131,7 @@ nav .nav-header:focus {
     text-align: left;
 }
 .profile_card-skills {
-    margin-bottom: 8px;
+/*    margin-bottom: 8px;*/
     margin-right: -7px;
     text-align: left;
 /*
@@ -5234,4 +5234,12 @@ nav .nav-header:focus {
 }
 textarea.input-lg {
     resize: vertical;
+}
+h2 small {
+    font-size: 60%;
+}
+@media (max-width: 991px){
+    #main>.main_card {
+        margin-top: 15px;
+    }
 }
