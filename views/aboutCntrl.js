@@ -1,3 +1,3 @@
-myApp.controller("aboutController", function($scope){
+angular.module('myResp').controller("aboutController", function($scope){
     
 });

@@ -1,3 +1,3 @@
-myApp.controller("contactController", function($scope){
+angular.module('myResp').controller("contactController", function($scope){
     
 });

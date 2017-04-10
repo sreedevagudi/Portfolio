@@ -5,76 +5,95 @@
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link href="assets/js/libs/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
-            <script src="https://code.jquery.com/jquery-1.9.1.min.js" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ="
-            crossorigin="anonymous"></script>
-            <script src="assets/js/libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+            
             <link href="assets/js/libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet">
             <link href="assets/css/myown.css" rel="stylesheet">
             <!-- SPELLS -->
-            <!-- load angular and angular route via CDN -->
-            <script src="assets/js/libs/angular-1.5.0/angular.min.js"></script>
+            <!-- load angular and angular route via CDN -->            
+            <script src="assets/js/libs/angular-1.5.0/angular.js"></script>            
             <script src="assets/js/libs/angular-1.5.0/angular-route.min.js"></script>
+            <script src="assets/js/libs/angular-1.5.0/angular-animate.min.js"></script>
+            <script src="assets/js/libs/angular-1.5.0/angular-aria.min.js"></script>
+            <script src="assets/js/libs/angular-1.5.0/angular-sanitize.min.js"></script>
+            <script src="assets/js/libs/angular-1.5.0/angular-route.min.js"></script>
+            <script src="assets/js/libs/angular-1.5.0/angular-touch.min.js"></script>
+            <script src="assets/js/libs/angular-1.5.0/angular-messages.js"></script>
+            <script src="assets/js/libs/angular-1.5.0/angular-resource.min.js"></script>
+            <script src="assets/js/libs/angular-1.5.0/angular-material.min.js"></script>
+            <script src="assets/js/libs/ui-bootstrap-tpls.js"></script>
 
             <!-- load controller -->
-            <script src="assets/js/myown.js"></script>
+            <script src="assets/js/module.js"></script>
+            <script src="assets/js/route.js"></script>
+<!--            <script src="assets/js/myown.js"></script>-->
+            <script src="assets/js/layout.js"></script>
             <script src="views/aboutCntrl.js"></script>
             <script src="views/contactCntrl.js"></script>
             <script src="views/portfolioCntrl.js"></script>
             <script src="views/pricingCntrl.js"></script>
             <script src="views/servicesCntrl.js"></script>
+            
+            <script src="https://code.jquery.com/jquery-1.9.1.min.js" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ="
+            crossorigin="anonymous"></script>
+            <script src="assets/js/libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 		</head>
-		<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+		<body id="myPage" data-target=".navbar" data-offset="60" ng-controller="layoutCtrl">
 			<!-- HEADER AND NAVBAR -->
 			<header>
 				<nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#myPage">Sreenath</a>
-              </div>
-              <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#about">ABOUT</a></li>
-                  <li><a href="#services">SERVICES</a></li>
-                  <li><a href="#portfolio">PORTFOLIO</a></li>
-                  <li><a href="#pricing">PRICING</a></li>
-                  <li><a href="#contact">CONTACT</a></li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+                    <div class="container">
+                      <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#myPage">Sreenath</a>
+                      </div>
+                      <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                          <li ng-class="{active: isActive('/') || isActive('/about')}"><a href="#about">ABOUT</a></li>
+                          <li ng-class="{active: isActive('/services')}"><a href="#services">SERVICES</a></li>
+                          <li ng-class="{active: isActive('/portfolio')}"><a href="#portfolio">PORTFOLIO</a></li>
+                          <li ng-class="{active: isActive('/pricing')}"><a href="#pricing">PRICING</a></li>
+                          <li ng-class="{active: isActive('/contact')}"><a href="#contact">CONTACT</a></li>
+                        </ul>
+                      </div>
+                    </div>
+              </nav>
 			</header>
 
       <div class="container-fluid">
           <div class="row">
               <div class="col-md-4">
-                <div id="Profile" class="talents-item_wrapper">
-                    <div class="talents-item_inner talents_card">
-                      <div class="talents_card-extra">
-                        <a class="talents_card-photo_wrapper" data-cookie-name="resumeReferrer" data-ensure-cookie="{&quot;category&quot;:null}" href="/designers/resume/haiyuan-jiang">
-                          <img title="large" class="talents_card-photo img-responsive" src="assets/img/Sreenath.jpg" alt="Sreenath"/>
-                          <div class="talents_card-photo_hint">View full profile »</div>
-                        </a>
+                <div id="Profile" class="profile-item_wrapper">
+                    <div class="profile-item_inner profile_card">
+                      <div class="profile_card-extra">
+                        <img title="large" class="profile_card-photo img-responsive" src="assets/img/Sreenath.jpg" alt="Sreenath"/>
                       </div>
-                      <div class="talents_card-main">
-                        <a class="link is-blue talents_card-name" data-cookie-name="resumeReferrer" data-ensure-cookie="{&quot;category&quot;:null}" href="/designers/resume/haiyuan-jiang">Haiyuan Jiang</a>
-                        <div class="talents_card-country">China</div>
-                        <div class="talents_card-description" data-truncate="" style="opacity: 1; max-height: none;">
-                          <span data-role="original_text">Haiyuan is a UI designer with 4+ years of experience who has delivered over 50+ projects to satisfied clients from all over the world. Though her specialty is designing for the user interface, she also has an acumen for graphic, motion, an… </span>
+                      <div class="profile_card-main">
+                        <a class="link is-blue profile_card-name" href="/designers/resume/haiyuan-jiang">Sreenath Reddy</a>
+                        <div class="profile_card-country">UX/UI Designer,<br />
+                            Bangalore, India <br>
+                            <a href="">Linkedin Profile</a> <span>|</span> <a href="">Print Preview</a>
+                          </div>
+                        <div class="profile_card-description" data-truncate="" style="opacity: 1; max-height: none;">
+                          <span data-role="original_text">Sreenath is a Front End Developer with 5+ years of experience who has delivered Good User Friendly to all his clients. Though his specialty is designing for the user interface, he also has an Hans-on Experience with Photoshop, Coding, database. </span>
                         </div>
-                        <div class="talents_card-skills" data-rows="2" data-view="skill_talent#tags" style="max-height: none;">
-                          <a class="tag talents_card-skill" data-role="tag" href="https://www.toptal.com/designers/ui">UI Designer</a>
-                          <a class="tag talents_card-skill" data-role="tag" href="https://www.toptal.com/designers/photoshop">Adobe Photoshop</a>
-                          <a class="tag talents_card-skill" data-role="tag" href="https://www.toptal.com/designers/illustrator">Adobe Illustrator</a>
-                          <a class="tag" data-cookie-name="resumeReferrer" data-ensure-cookie="{&quot;category&quot;:null}" data-role="more" href="/designers/resume/haiyuan-jiang" style="">+<span data-role="count">2</span> more</a>
+                        <div class="profile_card-skills" data-rows="2" data-view="skill_talent#tags">
+                          <a class="tag profile_card-skill" data-role="tag">HTML 5</a>
+                          <a class="tag profile_card-skill" data-role="tag">CSS3</a>
+                          <a class="tag profile_card-skill" data-role="tag">JQuery</a>
+                          <a class="tag profile_card-skill" data-role="tag">Javascript</a>
+                          <a class="tag profile_card-skill" data-role="tag">Bootstrap</a>
+                          <a class="tag profile_card-skill" data-role="tag">Angualr JS</a>
+                          <a class="tag profile_card-skill" data-role="tag">Visual Studio</a>
+                          <a class="tag profile_card-skill" data-role="tag">Sharepoint Designer</a>
+                          <a class="tag" data-role="more" href="#about#skills" style="">+<span data-role="count">View</span> more</a>
                         </div>
                       </div>
-                      <div class="text-center">
-                        <a class="button is-green_candy is-small is-full_width is-fixed talents_card-hire" href="https://www.toptal.com/companies/apply?interested_in=designers">Hire Haiyuan</a>
+                      <div class="text-center">                        
+                        <a class="btn btn-success" href="#contact">Hire Sreenath</a>
                       </div>
                     </div>
 

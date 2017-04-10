@@ -1,3 +1,3 @@
-myApp.controller("pricingController", function($scope){
+angular.module('myResp').controller("pricingController", function($scope){
     
 });

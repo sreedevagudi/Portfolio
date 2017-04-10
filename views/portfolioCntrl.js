@@ -1,3 +1,3 @@
-myApp.controller("portfolioController", function($scope){
+angular.module('myResp').controller("portfolioController", function($scope){
     
 });

@@ -1,3 +1,3 @@
-myApp.controller("servicesController", function($scope){
+angular.module('myResp').controller("servicesController", function($scope){
     
 });
