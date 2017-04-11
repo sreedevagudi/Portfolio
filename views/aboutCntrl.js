@@ -49,6 +49,7 @@ angular.module('myResp')
         },
         { "name": "Version Controller",
           "list": [
+              {"prof": "Git"},
               {"prof": "Tortoise SVN"}
           ]
         },
@@ -73,6 +74,12 @@ angular.module('myResp')
                 {"prof": "Adobe Dreamweaver"},
                 {"prof": "Eclipse"},
                 {"prof": "Oracle Web Logic"}
+            ]
+        },
+        { "name": "Prototypes",
+          "list": [
+                {"prof": "Microsoft Visio"},
+                {"prof": "Proto"}
             ]
         }];    
 }]);
