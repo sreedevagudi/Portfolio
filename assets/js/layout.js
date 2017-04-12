@@ -12,6 +12,9 @@ angular.module("myResp")
 //    }])
     .controller("layoutCtrl", ["$location", "$scope",
     function ($location, $scope) {        
+        
+        $scope.toggleActive = true;
+        
         $scope.isActive = function (viewLocation) {
             return viewLocation === $location.path();
         };  

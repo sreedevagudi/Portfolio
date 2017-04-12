@@ -1,11 +1,12 @@
 <!DOCTYPE html>
     <html ng-app="myResp" lang="en">
 		<head>
-            <title>Responsive Site</title>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link href="assets/js/libs/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
-            
+            <meta content="Web and Mobile User Interface and User Experience Design Senior Consultant based in Bangalore, India." name="description">
+            <meta content="freelance, web design, ui design, ux design, designer, interactive design, mobile design, user interface, user experience, consultant bangalore, India" name="keywords">
+            <title>Web &amp; Mobile Interface &amp; Experience Designer — Sreenath Reddy — Bangalore</title>            
+            <link href="assets/js/libs/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">            
             <link href="assets/js/libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet">
             <link href="assets/css/myown.css" rel="stylesheet">
             <!-- SPELLS -->
@@ -43,19 +44,19 @@
 				<nav class="navbar navbar-default navbar-fixed-top">
                     <div class="container">
                       <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <button ng-class="{'inactive': toggleActive, 'active': !toggleActive}" ng-click="toggleActive = !toggleActive" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                           <span class="icon-bar"></span>
                           <span class="icon-bar"></span>
                           <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#myPage">Sreenath</a>
+                        <a class="navbar-brand" href="#myPage"><i class="fa fa-user" aria-hidden="true"></i>Sreenath</a>
                       </div>
                       <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav navbar-right">
                           <li ng-class="{active: isActive('/') || isActive('/about')}"><a href="#about">ABOUT</a></li>
-                          <li ng-class="{active: isActive('/services')}"><a href="#services">SERVICES</a></li>
+<!--                          <li ng-class="{active: isActive('/services')}"><a href="#services">SERVICES</a></li>-->
                           <li ng-class="{active: isActive('/portfolio')}"><a href="#portfolio">PORTFOLIO</a></li>
-                          <li ng-class="{active: isActive('/pricing')}"><a href="#pricing">PRICING</a></li>
+<!--                          <li ng-class="{active: isActive('/pricing')}"><a href="#pricing">PRICING</a></li>-->
                           <li ng-class="{active: isActive('/contact')}"><a href="#contact">CONTACT</a></li>
                         </ul>
                       </div>
@@ -63,55 +64,57 @@
               </nav>
 			</header>
 
-      <div class="container-fluid">
-          <div class="row">
-              <div class="col-md-4">
-                <div id="Profile" class="profile-item_wrapper">
-                    <div class="profile-item_inner profile_card">
-                      <div class="profile_card-extra">
-                        <img title="large" class="profile_card-photo img-responsive" src="assets/img/Sreenath.jpg" alt="Sreenath"/>
-                      </div>
-                      <div class="profile_card-main">
-                        <a class="link is-blue profile_card-name" href="/designers/resume/haiyuan-jiang">Sreenath Reddy</a>
-                        <div class="profile_card-country">UX/UI Designer,<br />
-                            Bangalore, India <br>
-                            <a href="https://www.linkedin.com/in/sreenath-reddy-a791ba20" target="_blank">Linkedin Profile</a> <span>|</span> <a href="assets/attachments/Sreenath_Front_End_UI_Developer.pdf" target="_blank">Print Preview</a>
+          <div class="container-fluid" id="main-body">
+              <div class="row">
+                  <div class="col-md-4">
+                    <div id="Profile" class="profile-item_wrapper">
+                        <div class="profile-item_inner profile_card">
+                          <div class="profile_card-extra">
+                            <img title="large" class="profile_card-photo img-responsive" src="assets/img/Sreenath.jpg" alt="Sreenath"/>
                           </div>
-                        <div class="profile_card-description" data-truncate="" style="opacity: 1; max-height: none;">
-                          <span data-role="original_text">Sreenath is a Front End Developer with 5+ years of experience who has delivered Good User Friendly to all his clients. Though his specialty is designing for the user interface, he also has an Hans-on Experience with Photoshop, Coding, database. </span>
+                          <div class="profile_card-main">
+                            <a class="link is-blue profile_card-name" href="#myPage">Sreenath Reddy</a>
+                            <div class="profile_card-country">UX/UI Designer,<br />
+                                Bangalore, India <br>
+                                <a href="https://www.linkedin.com/in/sreenath-reddy-a791ba20" target="_blank">Linkedin Profile <i class="fa fa-external-link" aria-hidden="true"></i></a> <span>|</span> <a href="assets/attachments/Sreenath_Front_End_UI_Developer.pdf" target="_blank">Print Preview <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                              </div>
+                            <div class="profile_card-description" data-truncate="" style="opacity: 1; max-height: none;">
+                              <span data-role="original_text">Sreenath is a Front End Developer with 5+ years of experience who has delivered Good User Friendly to all his clients. Though his specialty is designing for the user interface, he also has an Hans-on Experience with Photoshop, Coding, database. </span>
+                            </div>
+                            <div class="profile_card-skills" data-rows="2" data-view="skill_talent#tags">
+                              <a class="tag profile_card-skill" data-role="tag">HTML 5</a>
+                              <a class="tag profile_card-skill" data-role="tag">CSS3</a>
+                              <a class="tag profile_card-skill" data-role="tag">JQuery</a>
+                              <a class="tag profile_card-skill" data-role="tag">Javascript</a>
+                              <a class="tag profile_card-skill" data-role="tag">Bootstrap</a>
+                              <a class="tag profile_card-skill" data-role="tag">Angualr JS</a>
+                              <a class="tag profile_card-skill" data-role="tag">Visual Studio</a>
+                              <a class="tag profile_card-skill" data-role="tag">Sharepoint Designer</a>
+                              <a class="tag" data-role="more" href="#about#skills" style="">+<span data-role="count">View</span> more</a>
+                            </div>
+                          </div>
+                          <div class="text-center">                        
+                            <a class="btn btn-success" href="#contact">Hire Sreenath</a>
+                          </div>
                         </div>
-                        <div class="profile_card-skills" data-rows="2" data-view="skill_talent#tags">
-                          <a class="tag profile_card-skill" data-role="tag">HTML 5</a>
-                          <a class="tag profile_card-skill" data-role="tag">CSS3</a>
-                          <a class="tag profile_card-skill" data-role="tag">JQuery</a>
-                          <a class="tag profile_card-skill" data-role="tag">Javascript</a>
-                          <a class="tag profile_card-skill" data-role="tag">Bootstrap</a>
-                          <a class="tag profile_card-skill" data-role="tag">Angualr JS</a>
-                          <a class="tag profile_card-skill" data-role="tag">Visual Studio</a>
-                          <a class="tag profile_card-skill" data-role="tag">Sharepoint Designer</a>
-                          <a class="tag" data-role="more" href="#about#skills" style="">+<span data-role="count">View</span> more</a>
-                        </div>
-                      </div>
-                      <div class="text-center">                        
-                        <a class="btn btn-success" href="#contact">Hire Sreenath</a>
-                      </div>
-                    </div>
 
-                </div>
-              </div>
-              <div class="col-md-8">
-                  <!-- MAIN CONTENT AND INJECTED VIEWS -->
-                  <div id="main" ng-view></div>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                      <!-- MAIN CONTENT AND INJECTED VIEWS -->
+                      <div id="main" ng-view></div>
+                  </div>
               </div>
           </div>
-      </div>
 
-      <footer class="container-fluid text-center">
-        <a href="#myPage" title="To Top">
-          <span class="glyphicon glyphicon-chevron-up"></span>
-        </a>
-        <p><a href="/" title="Visit My website">Beautiful Responsive Website</a></p>
-      </footer>
+          <footer class="container-fluid text-center m-t">
+<!--
+            <a data-role="Top" href="#myPage" title="To Top">
+              <span class="glyphicon glyphicon-chevron-up"></span>
+            </a>
+-->
+            <p><a href="#myPage" class="itsme" title="Visit My website">Designed by <i class="fa fa fa-user" aria-hidden="true"></i> Sreenath Reddy</a></p>
+          </footer>
 
 		</body>
     </html>
