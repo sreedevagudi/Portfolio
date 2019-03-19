@@ -5285,3 +5285,6 @@ ul.nav.navbar-nav.navbar-right {
     margin-bottom: inherit;
     margin-top: 10px;
 }
+.form-group a {
+    font-size: 16px;
+}
